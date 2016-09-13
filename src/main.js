@@ -1,5 +1,6 @@
 import 'bootstrap';
-import 'js/plugins/metisMenu/jquery.metisMenu.js';
+import 'js/plugins/metisMenu/jquery.metisMenu.custom.min.js';
+$("alo");
 
 export function configure(aurelia) {
   aurelia.use

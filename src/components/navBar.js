@@ -18,8 +18,8 @@ export class NavBar {
 
     initMenu() {
         this.menu = [
-            { title: 'Welcome', navModel: this.getRouterNavModel("welcome") },
-            { title: 'View1', navModel: this.getRouterNavModel("view1") }, {
+            { title: 'Welcome', navModel: this.getRouterNavModel("welcome"), class:'level1' },
+            { title: 'View1', navModel: this.getRouterNavModel("view1"), class:'level1' }, {
                 title: 'View 2',
                 items: [
                     { title: 'View 2_1', navModel: this.getRouterNavModel("view2_1") },
