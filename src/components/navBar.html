@@ -24,14 +24,13 @@
                     </a>
                     <ul if.bind="item.items" class="nav nav-second-level collapse">
                         <li repeat.for="subItem of item.items" class="${item.navModel.isActive  ? 'active' : ''}">
-                            <a href.bind="subItem.navModel.href">
-                                <span class="nav-label">${subItem.title}</span>
+                            <a href.bind="subItem.navModel.href">${subItem.title}
                                 <span if.bind="subItem.items" class="fa arrow"></span>
                             </a>
                             <ul if.bind="subItem.items" class="nav nav-third-level">
                                 <li repeat.for="subSubItem of subItem.items" class="${subSubItem.navModel.isActive  ? 'active' : ''}">
                                     <a href.bind="subSubItem.navModel.href">
-                                        <span class="nav-label">${subSubItem.title}</span>
+                                        ${subSubItem.title}
                                     </a>
                                 </li>
                             </ul>
