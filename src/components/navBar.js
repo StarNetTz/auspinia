@@ -22,7 +22,7 @@ export class NavBar {
             { title: 'View1', navModel: this.getRouterNavModel("view1") }, {
                 title: 'View 2',
                 items: [
-                    { title: 'View 2_1', navModel: this.getRouterNavModel("view2_1") },
+                    { title: 'View 2_1', navModel: this.getRouterNavModel("datePicker") },
                     { title: 'View 2_2', navModel: this.getRouterNavModel("view2_2") }
                 ]
             }, {

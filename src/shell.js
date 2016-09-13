@@ -4,7 +4,7 @@ export class Shell {
     config.map([
       { route: ['', 'welcome'], name: 'welcome',  moduleId: 'welcome',    nav: true },
       { route: 'view1',   name: 'view1',          moduleId: 'view1',      nav: true },
-      { route: 'view2_1', name: 'view2_1',        moduleId: 'view2_1',    nav: true },
+      { route: 'datePicker', name: 'datePicker',        moduleId: 'datePicker',    nav: true },
       { route: 'view2_2', name: 'view2_2',        moduleId: 'view2_2',    nav: true },
       { route: 'view3_1', name: 'view3_1',        moduleId: 'view3_1',    nav: true },
       { route: 'view3_2', name: 'view3_2',        moduleId: 'view3_2',    nav: true },
