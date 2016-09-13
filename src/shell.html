@@ -1,0 +1,24 @@
+<template>
+    <require from="css/bootstrap.min.css"></require>
+    <require from="css/style.css"></require>
+    <require from="css/animate.css"></require>
+    <require from="components/navbar"></require>
+    <require from="components/topbar"></require>
+   
+    <div id="wrapper">
+        <nav-bar></nav-bar>
+        <div id="page-wrapper" class="gray-bg">
+            <top-bar></top-bar>
+            <router-view></router-view>
+           
+            <div class="footer">
+                <div class="pull-right">
+                    10GB of <strong>250GB</strong> Free.
+                </div>
+                <div>
+                    <strong>Copyright</strong> Example Company &copy; 2014-2015
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
