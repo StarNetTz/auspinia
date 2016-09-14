@@ -1,6 +1,6 @@
 import { inject } from 'aurelia-framework';
 import { Router } from 'aurelia-router';
-import {I18N} from 'aurelia-i18n';
+import { I18N } from 'aurelia-i18n';
 
 @inject(Router, I18N)
 export class NavBar {
@@ -20,8 +20,8 @@ export class NavBar {
 
     initMenu() {
         this.menu = [
-            { i18Key: 'WelcomeMenuItem' , navModel: this.getRouterNavModel("welcome"), class:'level1' },
-            { i18Key: 'MenuItem1', navModel: this.getRouterNavModel("view1"), class:'level1' }, {
+            { i18Key: 'WelcomeMenuItem', navModel: this.getRouterNavModel("welcome"), class: 'level1' },
+            { i18Key: 'MenuItem1', navModel: this.getRouterNavModel("view1"), class: 'level1' }, {
                 i18Key: 'Menu2',
                 items: [
                     { i18Key: 'Menu2Item1', navModel: this.getRouterNavModel("view2_1") },
@@ -31,8 +31,7 @@ export class NavBar {
                 i18Key: 'Menu3',
                 items: [
                     { i18Key: 'Menu3Item1', navModel: this.getRouterNavModel("view3_1") },
-                    { i18Key: 'Menu3Item2', navModel: this.getRouterNavModel("view3_2") },
-                    {
+                    { i18Key: 'Menu3Item2', navModel: this.getRouterNavModel("view3_2") }, {
                         i18Key: 'Menu4',
                         items: [
                             { i18Key: 'Menu4Item1', navModel: this.getRouterNavModel("view4_1") },
