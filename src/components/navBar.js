@@ -19,7 +19,8 @@ export class NavBar {
     initMenu() {
         this.menu = [
             { title: 'Welcome', navModel: this.getRouterNavModel("welcome") },
-            { title: 'View1', navModel: this.getRouterNavModel("view1") }, {
+            { title: 'View1', navModel: this.getRouterNavModel("view1") },
+            { title: 'Validation', navModel: this.getRouterNavModel("validation") }, {
                 title: 'View 2',
                 items: [
                     { title: 'View 2_1', navModel: this.getRouterNavModel("datePickerView") },
@@ -29,8 +30,7 @@ export class NavBar {
                 title: 'View3',
                 items: [
                     { title: 'View 3_1', navModel: this.getRouterNavModel("view3_1") },
-                    { title: 'View 3_2', navModel: this.getRouterNavModel("view3_2") },
-                    {
+                    { title: 'View 3_2', navModel: this.getRouterNavModel("view3_2") }, {
                         title: 'View 4',
                         items: [
                             { title: 'View 4_1', navModel: this.getRouterNavModel("view4_1") },
@@ -40,6 +40,7 @@ export class NavBar {
 
                 ]
             }
+
         ];
     }
 
