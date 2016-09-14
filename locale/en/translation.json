@@ -1,0 +1,19 @@
+{
+    "AppTitle": "Auspinia",
+    "WelcomeMenuItem": "Welcome",
+    "MenuItem1": "Item 1",
+    "Menu2": "Menu 2",
+    "Menu2Item1": "Item 1",
+    "Menu2Item2": "Item 2",
+    "Menu3": "Menu 3",
+    "Menu3Item1": "Item 1",
+    "Menu3Item2": "Item 2",
+    "Menu4": "Menu 4",
+    "Menu4Item1": "Item 1",
+    "Menu4Item2": "Item 2",
+    "View1Content": "Hello, I am view !",
+    "ArtDirector" : "Art director",
+    "Logout": "Logout",
+    "WelcomeContent": "Welcome to Auspinia!!!"
+    
+}
