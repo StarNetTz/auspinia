@@ -40,13 +40,3 @@ function fireEvent(element, name) {
     var event = createEvent(name);
     element.dispatchEvent(event);
 }
-
-/*options="{format: 'DD.MM.YYYY', locale : {
-                                        applyLabel: 'Odaberi',
-                                        cancelLabel: 'Odustani',
-                                        fromLabel: 'Od',
-                                        toLabel: 'Do',
-                                        firstDay: 1,
-                                        daysOfWeek: ['Ned','Pon','Uto','Sri','Čet','Pet','Sub'],
-                                        monthNames: ['Januar', 'Februar','Mart','April','Maj','Juni','Juli','August','Septembar','Oktobar','Novembar','Decembar']
-                                    }}*/
