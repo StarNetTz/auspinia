@@ -14,5 +14,7 @@
     "View1Content": "Eine hello aus view1 !",
     "ArtDirector" : "Artische director",
     "Logout": "Log aus",
-    "WelcomeContent": "Wilcomen aus Auspinia!!!"
+    "WelcomeContent": "Wilcomen aus Auspinia!!!",
+    "DatePickerViewItem" : "Date time picker DE",
+    "ValidationItem" : "Eine Validation"
 }

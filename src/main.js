@@ -23,7 +23,8 @@ export function configure(aurelia) {
                 fallbackLng: 'en',
                 debug: false
             });
-        });
+        })
+        .plugin('aurelia-validation');
 
     //Uncomment the line below to enable animation.
     //aurelia.use.plugin('aurelia-animator-css');

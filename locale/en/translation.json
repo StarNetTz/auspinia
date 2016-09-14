@@ -14,6 +14,8 @@
     "View1Content": "Hello, I am view !",
     "ArtDirector" : "Art director",
     "Logout": "Logout",
-    "WelcomeContent": "Welcome to Auspinia!!!"
+    "WelcomeContent": "Welcome to Auspinia!!!",
+    "DatePickerViewItem" : "Date time picker",
+    "ValidationItem" : "Validation"
     
 }

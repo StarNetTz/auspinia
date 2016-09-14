@@ -9,7 +9,9 @@ export class Shell {
             { route: 'view3_1', name: 'view3_1', moduleId: 'view3_1', nav: true },
             { route: 'view3_2', name: 'view3_2', moduleId: 'view3_2', nav: true },
             { route: 'view4_1', name: 'view4_1', moduleId: 'view4_1', nav: true },
-            { route: 'view4_2', name: 'view4_2', moduleId: 'view4_2', nav: true }
+            { route: 'view4_2', name: 'view4_2', moduleId: 'view4_2', nav: true },
+            { route: 'datePickerView', name: 'datePickerView', moduleId: 'datePickerView', nav: true },
+            { route: 'validation', name: 'validation', moduleId: 'validation', nav: true }
         ]);
 
         this.router = router;

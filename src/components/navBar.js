@@ -40,7 +40,9 @@ export class NavBar {
                     }
 
                 ]
-            }
+            },
+            { i18Key: 'DatePickerViewItem', navModel: this.getRouterNavModel("datePickerView"), class: 'level1' },
+            { i18Key: 'ValidationItem', navModel: this.getRouterNavModel("validation"), class: 'level1' }
         ];
     }
 
