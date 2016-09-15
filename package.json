@@ -69,6 +69,7 @@
     "dependencies": {
       "aurelia-animator-css": "npm:aurelia-animator-css@^1.0.0-rc.1.0.0",
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-rc.1.0.0",
+      "aurelia-event-aggregator": "npm:aurelia-event-aggregator@^1.0.0",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-rc.1.0.0",
       "aurelia-framework": "npm:aurelia-framework@^1.0.0-rc.1.0.0",
       "aurelia-history-browser": "npm:aurelia-history-browser@^1.0.0-rc.1.0.0",
@@ -89,6 +90,7 @@
       "i18next-xhr-backend": "npm:i18next-xhr-backend@^1.1.0",
       "jquery": "npm:jquery@2.2.4",
       "jquery-ui": "github:components/jqueryui@1.10.4",
+      "jwt-decode": "npm:jwt-decode@^2.1.0",
       "text": "github:systemjs/plugin-text@^0.0.8"
     },
     "devDependencies": {}

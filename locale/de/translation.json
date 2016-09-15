@@ -16,5 +16,8 @@
     "Logout": "Log aus",
     "WelcomeContent": "Wilcomen aus Auspinia!!!",
     "DatePickerViewItem" : "Date time picker DE",
-    "ValidationItem" : "Eine Validation"
+    "ValidationItem" : "Eine Validation",
+    "RestrictedMenuItem": "Restricted DE",
+    "Login": "Login DE",
+    "JobTitleArchitect" : "Architect DE"
 }

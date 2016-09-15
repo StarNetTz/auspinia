@@ -16,6 +16,9 @@
     "Logout": "Logout",
     "WelcomeContent": "Welcome to Auspinia!!!",
     "DatePickerViewItem" : "Date time picker",
-    "ValidationItem" : "Validation"
+    "ValidationItem" : "Validation",
+    "RestrictedMenuItem": "Restricted",
+    "Login": "Login",
+    "JobTitleArchitect" : "Architect"
     
 }
