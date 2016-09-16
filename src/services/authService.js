@@ -20,6 +20,11 @@ export class AuthService {
     }
 
     initializeAuth0Lock() {
+        var options = {
+            auth: {
+                responseMode: 'form_post'
+            }
+        };
         this.lock = new Auth0Lock('03Qbs0qqa96HCyjHoZ1ZRrg9z5BrFWRy', 'starnet.eu.auth0.com');
         this.lock.on("authenticated", authResult => {
             console.log(authResult);
@@ -36,7 +41,7 @@ export class AuthService {
             });
         });
     }
-    
+
     login() {
         this.lock.show();
     }
