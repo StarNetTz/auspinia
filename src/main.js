@@ -1,6 +1,7 @@
 import 'bootstrap';
 import 'js/plugins/metisMenu/jquery.metisMenu.custom.min.js';
 import 'js/plugins/slimscroll/jquery.slimscroll.min.js';
+import 'js/plugins/sweetalert/sweetalert.js';
 import { I18N } from 'aurelia-i18n';
 import Backend from 'i18next-xhr-backend';
 import { ValidationMessageProvider } from 'aurelia-validation';
@@ -14,7 +15,7 @@ export function configure(aurelia) {
         .plugin('aurelia-i18n', (instance) => {
             // register backend plugin
             instance.i18next.use(Backend);
-            ValidationMessageProvider.prototype.getMessage = function(key) {               
+            ValidationMessageProvider.prototype.getMessage = function(key) {
                 return this.parser.parseMessage(instance.tr(key));
             };
 

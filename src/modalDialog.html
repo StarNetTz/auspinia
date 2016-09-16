@@ -1,12 +1,13 @@
 <template>
+
    <ai-dialog>
       <ai-dialog-body>
          <h2>${c.Name}</h2>
       </ai-dialog-body>
 
       <ai-dialog-footer>
-         <button click.trigger = "controller.cancel()">Cancel</button>
-         <button click.trigger = "controller.ok(message)">Ok</button>
+         <button click.delegate ="cancel()">Cancel</button>
+         <button click.delegate ="ok()">Ok</button>
       </ai-dialog-footer>
     
    </ai-dialog>

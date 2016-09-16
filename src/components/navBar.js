@@ -43,7 +43,7 @@ export class NavBar {
             },
             { i18Key: 'DatePickerViewItem', navModel: this.getRouterNavModel("datePickerView"), class: 'level1' },
             { i18Key: 'ValidationItem', navModel: this.getRouterNavModel("validation"), class: 'level1' },
-            { i18Key: 'ModalItem', navModel: this.getRouterNavModel("modal"), class: 'level1' }
+            { i18Key: 'ModalISweetalertItem', navModel: this.getRouterNavModel("modal"), class: 'level1' }
         ];
     }
 
