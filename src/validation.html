@@ -1,25 +1,18 @@
 <template>
-  <form submit.delegate="submit()">
-    <!--<ul><li repeat.for="error of controller.errors">${error.message}</li></ul>-->
-
-    <div class="form-group">
-      <label class="control-label" for="first">First Name</label>
-      <input type="text" class="form-control" id="first" placeholder="First Name"
-             value.bind="firstName & validate">
-    </div>
-
-    <div class="form-group">
-      <label class="control-label" for="last">Last Name</label>
-      <input type="text" class="form-control" id="last" placeholder="Last Name"
-             value.bind="lastName & validate">
-    </div>
-
-    <div class="form-group">
-      <label class="control-label" for="email">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Email"
-             value.bind="email & validate">
-    </div>
-
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+    <form submit.delegate="submit()">
+        <!--<ul><li repeat.for="error of controller.errors">${error.message}</li></ul>-->
+        <div class="form-group">
+            <label class="control-label" for="first" i18n="FirstName"></label>
+            <input type="text" class="form-control" id="first" t="[placeholder]FirstName" value.bind="firstName & validate">
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="last" i18n="LastName"></label>
+            <input type="text" class="form-control" id="last" t="[placeholder]LastName" value.bind="lastName & validate">
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="email" i18n="Email"></label>
+            <input type="email" class="form-control" id="email" t="[placeholder]Email" value.bind="email & validate">
+        </div>
+        <button type="submit" class="btn btn-primary" i18n="Save"></button>
+    </form>
 </template>

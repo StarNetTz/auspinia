@@ -112,7 +112,7 @@ System.config({
       "aurelia-pal": "npm:aurelia-pal@1.0.0",
       "aurelia-templating": "npm:aurelia-templating@1.1.0",
       "aurelia-templating-resources": "npm:aurelia-templating-resources@1.0.0",
-      "i18next": "npm:i18next@3.4.1",
+      "i18next": "npm:i18next@3.4.2",
       "intl": "npm:intl@1.2.4"
     },
     "npm:aurelia-loader-default@1.0.0": {
@@ -216,7 +216,7 @@ System.config({
     "npm:font-awesome@4.6.3": {
       "css": "github:systemjs/plugin-css@0.1.27"
     },
-    "npm:i18next@3.4.1": {
+    "npm:i18next@3.4.2": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:inherits@2.0.1": {
