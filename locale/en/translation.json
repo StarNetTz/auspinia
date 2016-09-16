@@ -29,5 +29,6 @@
     "FirstName": "First name",
     "LastName": "Last name",
     "Email": "E-mail",
-    "Save": "Save"
+    "Save": "Save",
+    "ModalItem": "Modal"
 }
