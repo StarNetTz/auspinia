@@ -24,7 +24,7 @@
                         AIN+
                     </div>
                 </li>
-                <li repeat.for="item of menu" class="${item.navModel.isActive ? 'active ' + item.class : item.class} ">
+                <li repeat.for="item of menu" class="${item.navModel.isActive ? 'active ' + item.class : item.class} " if.bind="!item.hidden">
                     <a href.bind="item.navModel.href">
                         <i class="fa fa-th-large"></i>
                         <span class="nav-label" i18n="${item.i18Key}"></span>

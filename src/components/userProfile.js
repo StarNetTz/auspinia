@@ -1,6 +1,6 @@
 import {inject} from 'aurelia-framework';
 import {EventAggregator} from 'aurelia-event-aggregator';
-import {AuthorizationNotification} from '../notifications/authorizationNotification';
+import {UserAuthorizedNotification, UserLoggedOffNotification, UserProfileAvailableNotification} from '../notifications/notifications';
 import jwt_decode from 'jwt-decode';
 
 @inject(EventAggregator)
@@ -9,8 +9,15 @@ export class UserProfile {
     constructor(eventAggregator) {
        this.eventAggregator = eventAggregator;
        this.load();
-       this.eventAggregator.subscribe(AuthorizationNotification, payload =>{
-         this.load();
+       this.eventAggregator.subscribe(UserAuthorizedNotification, () => {
+            console.log("UserAuthorizedNotification userprofile reload");
+            this.load();
+            this.eventAggregator.publish(new UserProfileAvailableNotification());
+       });
+       this.eventAggregator.subscribe(UserLoggedOffNotification, () =>{
+            console.log("UserLoggedOffNotification userprofile reload");
+            this.load();
+            this.eventAggregator.publish(new UserProfileAvailableNotification());
        });
     }
 
@@ -21,7 +28,7 @@ export class UserProfile {
             this.parseProfile(profileString);
         } else {
             this.createGuestUserProfile();
-        }
+        }  
     }
 
     parseProfile(profileString) {

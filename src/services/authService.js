@@ -1,7 +1,7 @@
 import { inject } from 'aurelia-framework';
 import { HttpClient } from 'aurelia-fetch-client';
 import { EventAggregator } from 'aurelia-event-aggregator';
-import { AuthorizationNotification } from '../notifications/authorizationNotification';
+import {UserAuthorizedNotification, UserLoggedOffNotification} from '../notifications/notifications';
 
 @inject(HttpClient, EventAggregator)
 export class AuthService {
@@ -37,7 +37,7 @@ export class AuthService {
 
                 localStorage.setItem('idToken', authResult.idToken);
                 localStorage.setItem('profile', JSON.stringify(profile));
-                this.eventAggregator.publish(new AuthorizationNotification({ login: true }));
+                this.eventAggregator.publish(new UserAuthorizedNotification());
             });
         });
     }
@@ -49,7 +49,7 @@ export class AuthService {
     logout() {
         localStorage.removeItem('profile');
         localStorage.removeItem('idToken');
-        this.eventAggregator.publish(new AuthorizationNotification({ logout: true }));
+        this.eventAggregator.publish(new UserLoggedOffNotification());
     }
 
 }
