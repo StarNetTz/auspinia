@@ -5,17 +5,19 @@ import {
     ValidationRules
 } from 'aurelia-validation';
 import { BootstrapFormRenderer } from 'js/plugins/validation/bootstrap-form-renderer';
+import { I18N } from 'aurelia-i18n';
 
-@inject(ValidationControllerFactory)
+@inject(ValidationControllerFactory, I18N)
 export class Validation {
     firstName = '';
     lastName = '';
     email = '';
     controller = null;
 
-    constructor(controllerFactory) {
+    constructor(controllerFactory, i18N) {
         this.controller = controllerFactory.createForCurrentScope();
         this.controller.addRenderer(new BootstrapFormRenderer());
+        this.i18n= i18N;
     }
 
 
@@ -33,7 +35,10 @@ export class Validation {
 }
 
 ValidationRules
-    .ensure(a => a.firstName).required().minLength(5)
+    .ensure(a => a.firstName).required().minLength(5).maxLength(15)
     .ensure(a => a.lastName).required().matches(/\d{3}-\d{2}-\d{4}/)
     .ensure(a => a.email).required().email()
     .on(Validation);
+
+
+//@required({ tr: i18n.tr('email'), message: i18n.tr('validatejs.presence.message') })
