@@ -29,7 +29,11 @@
     "FirstName": "First name DE",
     "LastName": "Last name DE",
     "Email": "E-mail DE",
-     "Save": "Save DE",
-     "ModalISweetalertItem": "Modal and Sweet Alert DE"
+    "Save": "Save DE",
+    "ModalISweetalertItem": "Modal and Sweet Alert DE",
+    "Blue": "Blue DE",
+    "Green": "Green DE",
+    "Goodjob": "Good Job DE"
+
 
 }
