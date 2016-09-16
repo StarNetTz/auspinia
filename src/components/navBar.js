@@ -1,12 +1,16 @@
 import { inject } from 'aurelia-framework';
 import { Router } from 'aurelia-router';
 import { I18N } from 'aurelia-i18n';
+import { UserProfile } from './userProfile';
+import { AuthService } from '../services/authService';
 
-@inject(Router, I18N)
+@inject(Router, I18N, UserProfile, AuthService)
 export class NavBar {
-    constructor(router, i18n) {
+    constructor(router, i18n, userProfile, authService) {
         this.router = router;
         this.i18n = i18n;
+        this.userProfile = userProfile;
+        this.authService = authService;
     }
 
     bind() {
@@ -42,8 +46,16 @@ export class NavBar {
                 ]
             },
             { i18Key: 'DatePickerViewItem', navModel: this.getRouterNavModel("datePickerView"), class: 'level1' },
-            { i18Key: 'ValidationItem', navModel: this.getRouterNavModel("validation"), class: 'level1' }
+            { i18Key: 'ValidationItem', navModel: this.getRouterNavModel("validation"), class: 'level1' },
+            { i18Key: 'RestrictedMenuItem', navModel: this.getRouterNavModel("restricted_1"), class: 'level1' }
         ];
     }
 
+    logout() {
+        this.authService.logout();
+    }
+
+    isAuthenticated() {
+        return this.authService.isAuthenticated();
+    }
 }

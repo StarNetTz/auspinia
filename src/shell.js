@@ -11,7 +11,8 @@ export class Shell {
             { route: 'view4_1', name: 'view4_1', moduleId: 'view4_1', nav: true },
             { route: 'view4_2', name: 'view4_2', moduleId: 'view4_2', nav: true },
             { route: 'datePickerView', name: 'datePickerView', moduleId: 'datePickerView', nav: true },
-            { route: 'validation', name: 'validation', moduleId: 'validation', nav: true }
+            { route: 'validation', name: 'validation', moduleId: 'validation', nav: true },
+            { route: 'restricted_1', name: 'restricted_1', moduleId: 'restricted_1', nav: true, settings: {isRestricted: true, requiredRole:'admin'}}
         ]);
 
         this.router = router;

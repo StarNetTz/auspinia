@@ -5,15 +5,23 @@
                 <li class="nav-header">
                     <div class="dropdown profile-element">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">David Williams</strong>
-                             </span> <span class="text-muted text-xs block" i18n="ArtDirector"><b class="caret"></b></span> </span>
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">${userProfile.name}</strong>
+                                </span>
+                                <span class="text-muted text-xs block" i18n="${userProfile.jobTitlei18key}">
+                                    <b class="caret"></b>
+                                </span>
+                            </span>
                         </a>
                         <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                            <li><a href="#" i18n="Logout"></a></li>
+                            <li>
+                                <a href="#" click.delegate="logout()" i18n="Logout"></a>
+                            </li>
                         </ul>
                     </div>
                     <div class="logo-element">
-                        IN+
+                        AIN+
                     </div>
                 </li>
                 <li repeat.for="item of menu" class="${item.navModel.isActive ? 'active ' + item.class : item.class} ">
@@ -23,21 +31,19 @@
                         <span if.bind="item.items" class="fa arrow"></span>
                     </a>
                     <ul if.bind="item.items" class="nav nav-second-level collapse">
-                        <li repeat.for="subItem of item.items" class="${item.navModel.isActive  ? 'active' : ''}">
-                            <a href.bind="subItem.navModel.href" i18n="${subItem.i18Key}">
-                                <span if.bind="subItem.items" class="fa arrow"></span>
+                        <li repeat.for="lvl2Item of item.items" class="${lvl2Item.navModel.isActive  ? 'active' : ''}">
+                            <a href.bind="lvl2Item.navModel.href" i18n="${lvl2Item.i18Key}">
+                                <span if.bind="lvl2Item.items" class="fa arrow"></span>
                             </a>
-                            <ul if.bind="subItem.items" class="nav nav-third-level">
-                                <li repeat.for="subSubItem of subItem.items" class="${subSubItem.navModel.isActive  ? 'active' : ''}">
-                                    <a href.bind="subSubItem.navModel.href" i18n="${subSubItem.i18Key}">
+                            <ul if.bind="lvl2Item.items" class="nav nav-third-level">
+                                <li repeat.for="lvl3Item of lvl2Item.items" class="${lvl3Item.navModel.isActive  ? 'active' : ''}">
+                                    <a href.bind="lvl3Item.navModel.href" i18n="${lvl3Item.i18Key}">
                                     </a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-            </ul>
-            </li>
             </ul>
         </div>
     </nav>

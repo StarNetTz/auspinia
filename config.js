@@ -9,6 +9,7 @@ System.config({
   map: {
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.1",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
+    "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0",
     "aurelia-framework": "npm:aurelia-framework@1.0.3",
     "aurelia-history-browser": "npm:aurelia-history-browser@1.0.0",
@@ -29,6 +30,7 @@ System.config({
     "i18next-xhr-backend": "npm:i18next-xhr-backend@1.1.0",
     "jquery": "npm:jquery@2.2.4",
     "jquery-ui": "github:components/jqueryui@1.10.4",
+    "jwt-decode": "npm:jwt-decode@2.1.0",
     "text": "github:systemjs/plugin-text@0.0.8",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -224,6 +226,10 @@ System.config({
     },
     "npm:intl@1.2.4": {
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:jwt-decode@2.1.0": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
     "npm:process@0.11.9": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",

@@ -19,9 +19,13 @@
                     <span> German </span></a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a if.bind ="userProfile.isAuthenticated" click.delegate="logout()" href="#">
                         <i class="fa fa-sign-out"></i>
-                        <span i18n="Logout"></span>
+                        <span  i18n="Logout"></span>
+                    </a>
+                    <a if.bind ="!userProfile.isAuthenticated" click.delegate="login()"  href="#">
+                        <i class="fa fa-sign-in"></i>
+                        <span i18n="Login"></span>
                     </a>
                 </li>
             </ul>
