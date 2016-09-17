@@ -20,7 +20,8 @@ export class Shell {
 
     attached() {
         console.log("shell attached");
-        this.initializeInspinia();
+        setTimeout(this.initializeInspinia(), 2000);
+       // this.initializeInspinia();
         // Minimalize menu when screen is less than 768px
         $(window).bind("resize", function() {
             if ($(this).width() < 769) {

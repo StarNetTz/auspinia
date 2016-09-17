@@ -55,6 +55,7 @@ export class UserProfile {
   		this.name = "Guest";
         this.roles = ["guest"];
         this.isAuthenticated = false;
+        this.jobTitlei18key = '';
     }
 
 

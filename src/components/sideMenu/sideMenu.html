@@ -1,0 +1,15 @@
+<template>
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <compose containerless view="./profile.html"></compose>
+                    <div class="logo-element">
+                        AIN+
+                    </div>
+                </li>
+                   <compose repeat.for="item of menu.items" containerless model.bind="item" view="./item.html"></compose>
+            </ul>
+        </div>
+    </nav>
+</template>
