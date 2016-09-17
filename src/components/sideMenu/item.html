@@ -1,18 +1,18 @@
 <template>
-    <li class="${item.isActive ? 'active ' : ''}" if.bind="item.isVisible">
-        <a href.bind="item.href">
+    <li class="${item.navModel.isActive ? 'active ' + item.class : item.class}" if.bind="item.isVisible">
+        <a href.bind="item.navModel.href">
             <i class.bind="item.fontAwesomeIcon"></i>
-            <span class="nav-label" t="${item.caption}"></span>
+            <span class="nav-label" t="${item.i18key}"></span>
             <span if.bind="item.type === 'menu'" class="fa arrow"></span>
         </a>
         <ul if.bind="item.items" class="nav nav-second-level collapse">
-            <li repeat.for="lvl2Item of item.items" class="${lvl2Item.isActive  ? 'active' : ''}">
-                <a href.bind="lvl2Item.navModel.href">${lvl2Item.caption}
+            <li repeat.for="lvl2Item of item.items" class="${lvl2Item.navModel.isActive  ? 'active' : ''}">
+                <a href.bind="lvl2Item.navModel.href" t="${lvl2Item.i18key}">
                     <span if.bind="lvl2Item.items" class="fa arrow"></span>
                 </a>
                 <ul if.bind="lvl2Item.items" class="nav nav-third-level">
-                    <li repeat.for="lvl3Item of lvl2Item.items" class="${lvl3Item.isActive  ? 'active' : ''}">
-                        <a href.bind="lvl3Item.navModel.href" i18n="${lvl3Item.i18Key}">
+                    <li repeat.for="lvl3Item of lvl2Item.items" class="${lvl3Item.navModel.isActive  ? 'active' : ''}">
+                        <a href.bind="lvl3Item.navModel.href" i18n="${lvl3Item.i18key}">
                         </a>
                     </li>
                 </ul>

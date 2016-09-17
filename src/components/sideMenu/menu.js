@@ -1,31 +1,39 @@
+import { inject } from 'aurelia-framework';
+import { Router } from 'aurelia-router';
+
+@inject(Router)
 export class Menu {
     
-    constructor() {
-        this.init();
+    constructor(router) {
+        this.router = router;
     }
 
     init() {
         this.items = [
-            { caption: "sidemenu:Dashboards", isActive: false, type: "menu", isVisible: true, fontAwesomeIcon: 'fa fa-th-large', items: [
-                    { caption: "Dashboard v.1", isActive: false, type: "item", isVisible: true },
-                    { caption: "Dashboard v.2", isActive: false, type: "item", isVisible: true },
-                    { caption: "Dashboard v.3", isActive: false, type: "item", isVisible: true },
-                    { caption: "Dashboard v.4", isActive: false, type: "item", isVisible: true }
+            { i18key: "sidemenu:Dashboards", type: "menu", isVisible: true, fontAwesomeIcon: 'fa fa-th-large', items: [
+                    { i18key: "sidemenu:Dashboard_v1", type: "item", isVisible: true, navModel: this.getNavModel('dashboard_1') },
+                    { i18key: "sidemenu:Dashboard_v2", type: "item", isVisible: true, navModel: this.getNavModel('dashboard_2') },
+                    { i18key: "sidemenu:Dashboard_v3", type: "item", isVisible: true, navModel: this.getNavModel('dashboard_3') },
+                    { i18key: "sidemenu:Dashboard_v4", type: "item", isVisible: true, navModel: this.getNavModel('dashboard_4') }
                 ]
             },
-            { caption: "Layouts", isActive: false, type: "item", isVisible: true, fontAwesomeIcon: 'fa fa-diamond'},
-            { caption: "Graphs", isActive: false, type: "menu", isVisible: true, fontAwesomeIcon: 'fa fa-bar-chart-o', items: [
-                    { caption: "Flot Charts", isActive: false, type: "item", isVisible: true },
-                    { caption: "Morris.js Charts", isActive: false, type: "item", isVisible: true },
-                    { caption: "Rickshaw Charts", isActive: false, type: "item", isVisible: true },
-                    { caption: "Chart.js", isActive: false, type: "item", isVisible: true },
-                    { caption: "Chartist", isActive: false, type: "item", isVisible: true },
-                    { caption: "c3 charts", isActive: false, type: "item", isVisible: true },
-                    { caption: "Peity Charts", isActive: false, type: "item", isVisible: true },
-                    { caption: "Sparkline Charts", isActive: false, type: "item", isVisible: true }
+            { i18key: "sidemenu:Layouts", type: "item", isVisible: true, fontAwesomeIcon: 'fa fa-diamond', navModel: this.getNavModel('layouts'), class: 'level1'},
+            { i18key: "sidemenu:Graphs", type: "menu", isVisible: true, fontAwesomeIcon: 'fa fa-bar-chart-o', items: [
+                    { i18key: "sidemenu:FlotCharts", type: "item", isVisible: true },
+                    { i18key: "sidemenu:MorrisCharts", type: "item", isVisible: true },
+                    { i18key: "sidemenu:RickshawCharts", type: "item", isVisible: true },
+                    { i18key: "sidemenu:ChartsJs", type: "item", isVisible: true },
+                    { i18key: "sidemenu:Chartist", type: "item", isVisible: true },
+                    { i18key: "sidemenu:C3Charts", type: "item", isVisible: true },
+                    { i18key: "sidemenu:PeityCharts", type: "item", isVisible: true },
+                    { i18key: "sidemenu:SparklineCharts", type: "item", isVisible: true }
                 ]
             }
         ];
     }
 
+    getNavModel(name) {
+        let route = this.router.routes.find((item) => item.name === name);
+        return route.navModel;
+    }
 }

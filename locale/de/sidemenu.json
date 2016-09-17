@@ -1,3 +1,17 @@
 {
-    "Dashboards": "Dashboards DE"
+    "Dashboards": "Dashboards DE",
+    "Dashboard_v1": "Dashboard v.1 DE",
+    "Dashboard_v2": "Dashboard v.2 DE",
+    "Dashboard_v3": "Dashboard v.3 DE",
+    "Dashboard_v4": "Dashboard v.4 DE",
+    "Layouts": "Layouts DE",
+    "Graphs": "Graphs DE",
+    "FlotCharts": "Flot Charts DE",
+    "MorrisCharts": "Morris.js Charts DE",
+    "RickshawCharts": "Rickshaw Charts DE",
+    "ChartsJs": "Charts.js DE",
+    "Chartist": "Chartist DE",
+    "C3Charts": "c3 charts DE",
+    "PeityCharts": "Peity Charts DE",
+    "SparklineCharts": "Sparkline Charts DE"
 }

@@ -26,6 +26,7 @@ export class SideMenu {
     }
 
     bind() {
+        this.menu.init();
          console.log("sidmenu bind");
     }
 
