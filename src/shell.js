@@ -12,7 +12,12 @@ export class Shell {
             { route: 'view4_2', name: 'view4_2', moduleId: 'view4_2', nav: true },
             { route: 'datePickerView', name: 'datePickerView', moduleId: 'datePickerView', nav: true },
             { route: 'validation', name: 'validation', moduleId: 'validation', nav: true },
-            { route: 'restricted_1', name: 'restricted_1', moduleId: 'restricted_1', nav: true, settings: {isRestricted: true, requiredRole:'admin'}}
+            { route: 'restricted_1', name: 'restricted_1', moduleId: 'restricted_1', nav: true, settings: {isRestricted: true, requiredRole:'admin'}},
+            { route: 'dashboard_1', name: 'dashboard_1', moduleId: 'dashboards/dashboard_1', nav: true },
+            { route: 'dashboard_2', name: 'dashboard_2', moduleId: 'dashboards/dashboard_2', nav: true },
+            { route: 'dashboard_3', name: 'dashboard_3', moduleId: 'dashboards/dashboard_3', nav: true },
+            { route: 'dashboard_4', name: 'dashboard_4', moduleId: 'dashboards/dashboard_4', nav: true },
+            { route: 'layouts', name: 'layouts', moduleId: 'layouts', nav: true }
         ]);
 
         this.router = router;
@@ -20,7 +25,8 @@ export class Shell {
 
     attached() {
         console.log("shell attached");
-        this.initializeInspinia();
+        setTimeout(this.initializeInspinia(), 2000);
+       // this.initializeInspinia();
         // Minimalize menu when screen is less than 768px
         $(window).bind("resize", function() {
             if ($(this).width() < 769) {

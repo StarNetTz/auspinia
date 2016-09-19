@@ -1,0 +1,19 @@
+<template>
+    <div class="dropdown profile-element">
+        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+            <span class="clear">
+ 				<span class="block m-t-xs">
+                	<strong class="font-bold">${userProfile.name}</strong>
+                </span>
+            	<span class="text-muted text-xs block" i18n="${userProfile.jobTitlei18key}">
+                	<b class="caret"></b>
+                </span>
+            </span>
+        </a>
+        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+            <li>
+                <a href="#" click.delegate="logout()" i18n="Logout"></a>
+            </li>
+        </ul>
+    </div>
+</template>
