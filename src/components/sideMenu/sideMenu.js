@@ -15,10 +15,12 @@ export class SideMenu {
         this.userProfile = userProfile;
         this.authService = authService;
         this.eventAggregator = eventAggregator;
-        this.eventAggregator.subscribe(UserProfileAvailableNotification, () => {
-            //this.updateMenuVisibility();
-        });
         this.menu = menu;
+        this.eventAggregator.subscribe(UserProfileAvailableNotification, () => {
+            console.log("user profile available to sidemenu");
+            this.updateMenuVisibility();
+        });
+        
     }
 
     created(view){
@@ -40,5 +42,24 @@ export class SideMenu {
 
     isAuthenticated() {
         return this.authService.isAuthenticated();
+    }
+
+    updateMenuVisibility() {
+
+        this.menu.items.forEach((item) => {
+             console.log(item);
+            if (item.navModel) {
+                if (item.navModel.settings.isRestricted) {
+                    let isAuthenticated = this.userProfile.isAuthenticated;
+                    let isInRole = true;
+                    if (item.navModel.settings.requiredRole)
+                    {
+                        isInRole = this.userProfile.isInRole(item.navModel.settings.requiredRole);
+                    }
+                    item.isVisible = (isAuthenticated && isInRole);
+                    console.log(item.isVisible);
+                }
+            }
+        });
     }
 }

@@ -28,7 +28,8 @@ export class Menu {
                     { i18key: "sidemenu:PeityCharts", type: "item", isVisible: true },
                     { i18key: "sidemenu:SparklineCharts", type: "item", isVisible: true }
                 ]
-            }
+            },
+            { i18key: "sidemenu:Restricted", type: "item", isVisible: true, fontAwesomeIcon: 'fa fa-lock', navModel: this.getNavModel('restricted'), class: 'level1'}
         ];
     }
 

@@ -17,7 +17,8 @@ export class Shell {
             { route: 'dashboard_2', name: 'dashboard_2', moduleId: 'dashboards/dashboard_2', nav: true },
             { route: 'dashboard_3', name: 'dashboard_3', moduleId: 'dashboards/dashboard_3', nav: true },
             { route: 'dashboard_4', name: 'dashboard_4', moduleId: 'dashboards/dashboard_4', nav: true },
-            { route: 'layouts', name: 'layouts', moduleId: 'layouts', nav: true }
+            { route: 'layouts', name: 'layouts', moduleId: 'layouts', nav: true },
+            { route: 'restricted', name: 'restricted', moduleId: 'restricted', nav: true, settings: {isRestricted :true, requiredRole:'Admin'}}
         ]);
 
         this.router = router;

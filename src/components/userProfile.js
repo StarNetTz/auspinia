@@ -1,34 +1,34 @@
-import {inject} from 'aurelia-framework';
-import {EventAggregator} from 'aurelia-event-aggregator';
-import {UserAuthorizedNotification, UserLoggedOffNotification, UserProfileAvailableNotification} from '../notifications/notifications';
+import { inject } from 'aurelia-framework';
+import { EventAggregator } from 'aurelia-event-aggregator';
+import { UserAuthorizedNotification, UserLoggedOffNotification, UserProfileAvailableNotification } from '../notifications/notifications';
 import jwt_decode from 'jwt-decode';
 
 @inject(EventAggregator)
 export class UserProfile {
 
     constructor(eventAggregator) {
-       this.eventAggregator = eventAggregator;
-       this.load();
-       this.eventAggregator.subscribe(UserAuthorizedNotification, () => {
+        this.eventAggregator = eventAggregator;
+        this.load();
+        this.eventAggregator.subscribe(UserAuthorizedNotification, () => {
             console.log("UserAuthorizedNotification userprofile reload");
             this.load();
             this.eventAggregator.publish(new UserProfileAvailableNotification());
-       });
-       this.eventAggregator.subscribe(UserLoggedOffNotification, () =>{
+        });
+        this.eventAggregator.subscribe(UserLoggedOffNotification, () => {
             console.log("UserLoggedOffNotification userprofile reload");
             this.load();
             this.eventAggregator.publish(new UserProfileAvailableNotification());
-       });
+        });
     }
 
-   
+
     load() {
         let profileString = localStorage.getItem('profile');
         if (profileString) {
             this.parseProfile(profileString);
         } else {
             this.createGuestUserProfile();
-        }  
+        }
     }
 
     parseProfile(profileString) {
@@ -39,8 +39,7 @@ export class UserProfile {
 
 
         let fullName = "Invalid user metada";
-        if (firstName && lastName)
-        {
+        if (firstName && lastName) {
             fullName = `${firstName} ${lastName}`;
         }
 
@@ -52,7 +51,7 @@ export class UserProfile {
     }
 
     createGuestUserProfile() {
-  		this.name = "Guest";
+        this.name = "Guest";
         this.roles = ["guest"];
         this.isAuthenticated = false;
         this.jobTitlei18key = '';
@@ -61,13 +60,15 @@ export class UserProfile {
 
     parseRoles(roles) {
         let retVal = '';
-        roles.forEach((item) => {
-            if (retVal != '') {
-                retVal = retVal + ', ' + item;
-            } else {
-                retVal = item;
-            }
-        });
+        if (roles) {
+            roles.forEach((item) => {
+                if (retVal != '') {
+                    retVal = retVal + ', ' + item;
+                } else {
+                    retVal = item;
+                }
+            });
+        }
         if (retVal === '')
             retVal = "guest";
         return retVal;
