@@ -256,5 +256,6 @@ export class dashboard_2 {
         this.initPeity();
         this.initFlot();
         this.initMap();
+        
     }
 }
