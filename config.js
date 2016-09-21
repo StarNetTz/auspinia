@@ -27,7 +27,7 @@ System.config({
     "bootstrap": "github:twbs/bootstrap@3.3.7",
     "fetch": "github:github/fetch@1.0.0",
     "font-awesome": "npm:font-awesome@4.6.3",
-    "i18next-xhr-backend": "npm:i18next-xhr-backend@1.1.0",
+    "i18next-xhr-backend": "npm:i18next-xhr-backend@1.2.0",
     "jquery": "npm:jquery@2.2.4",
     "jquery-ui": "github:components/jqueryui@1.10.4",
     "jwt-decode": "npm:jwt-decode@2.1.0",
@@ -115,8 +115,8 @@ System.config({
       "aurelia-pal": "npm:aurelia-pal@1.0.0",
       "aurelia-templating": "npm:aurelia-templating@1.1.0",
       "aurelia-templating-resources": "npm:aurelia-templating-resources@1.0.0",
-      "i18next": "npm:i18next@3.4.2",
-      "intl": "npm:intl@1.2.4"
+      "i18next": "npm:i18next@3.4.3",
+      "intl": "npm:intl@1.2.5"
     },
     "npm:aurelia-loader-default@1.0.0": {
       "aurelia-loader": "npm:aurelia-loader@1.0.0",
@@ -219,13 +219,13 @@ System.config({
     "npm:font-awesome@4.6.3": {
       "css": "github:systemjs/plugin-css@0.1.27"
     },
-    "npm:i18next@3.4.2": {
+    "npm:i18next@3.4.3": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
-    "npm:intl@1.2.4": {
+    "npm:intl@1.2.5": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:jwt-decode@2.1.0": {

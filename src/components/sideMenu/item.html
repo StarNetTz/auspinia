@@ -8,8 +8,7 @@
         </a>
         <ul if.bind="item.items" class="nav nav-second-level collapse">
             <li repeat.for="lvl2Item of item.items" class="${lvl2Item.navModel.isActive  ? 'active' : ''}">
-                <a href.bind="lvl2Item.navModel.href">
-                    <span t="${lvl2Item.i18key}"></span>
+                <a href.bind="lvl2Item.navModel.href" t="${lvl2Item.i18key}">
                     <span if.bind="lvl2Item.items" class="fa arrow"></span>
                 </a>
                
