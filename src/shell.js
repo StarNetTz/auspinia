@@ -3,12 +3,12 @@ export class Shell {
         config.title = 'Aurelia';
         config.map([
             { route: 'restricted', name: 'restricted', moduleId: 'views/restricted', nav: true, settings: { isRestricted: true, requiredRole: 'Admin' } },
-            { route: ['', 'welcome'], name: 'welcome', moduleId: 'views/welcome', nav: true },
-            { route: 'dashboard_1', name: 'dashboard_1', moduleId: 'views/dashboards/dashboard_1', nav: true },
+            { route: ['','dashboard_1'], name: 'dashboard_1', moduleId: 'views/dashboards/dashboard_1', nav: true },
             { route: 'dashboard_2', name: 'dashboard_2', moduleId: 'views/dashboards/dashboard_2', nav: true },
             { route: 'dashboard_3', name: 'dashboard_3', moduleId: 'views/dashboards/dashboard_3', nav: true },
             { route: 'dashboard_4', name: 'dashboard_4', moduleId: 'views/dashboards/dashboard_4', nav: true },
-            { route: 'layouts', name: 'layouts', moduleId: 'views/layouts', nav: true },
+            { route: 'dashboard_5', name: 'dashboard_5', moduleId: 'views/dashboards/dashboard_5', nav: true },
+            { route: 'layouts', name: 'layouts', moduleId: 'views/layouts/layouts', nav: true },
             { route: 'flotCharts', name: 'flotCharts', moduleId: 'views/graphs/flotCharts', nav: true },
             { route: 'morrisCharts', name: 'morrisCharts', moduleId: 'views/graphs/morrisCharts', nav: true },
             { route: 'rickshawCharts', name: 'rickshawCharts', moduleId: 'views/graphs/rickshawCharts', nav: true },
@@ -21,8 +21,8 @@ export class Shell {
             { route: 'emailView', name: 'emailView', moduleId: 'views/inbox/emailView', nav: true },
             { route: 'composeEmail', name: 'composeEmail', moduleId: 'views/inbox/composeEmail', nav: true },
             { route: 'emailTemplates', name: 'emailTemplates', moduleId: 'views/inbox/emailTemplates', nav: true },
-            { route: 'metrics', name: 'metrics', moduleId: 'views/metrics', nav: true },
-            { route: 'widgets', name: 'widgets', moduleId: 'views/widgets', nav: true },
+            { route: 'metrics', name: 'metrics', moduleId: 'views/metrics/metrics', nav: true },
+            { route: 'widgets', name: 'widgets', moduleId: 'views/widgets/widgets', nav: true },
             { route: 'basicForm', name: 'basicForm', moduleId: 'views/forms/basicForm', nav: true },
             { route: 'advancedPlugins', name: 'advancedPlugins', moduleId: 'views/forms/advancedPlugins', nav: true },
             { route: 'wizard', name: 'wizard', moduleId: 'views/forms/basicForm', nav: true },
@@ -97,9 +97,9 @@ export class Shell {
             { route: 'badgesLabels', name: 'badgesLabels', moduleId: 'views/uielements/badgesLabels', nav: true },
             { route: 'gridOptions', name: 'gridOptions', moduleId: 'views/gridOptions', nav: true },
             { route: 'staticTables', name: 'staticTables', moduleId: 'views/tables/staticTables', nav: true },
-            { route: 'dataTables', name: 'dataTables', moduleId: 'views/dataTables', nav: true },
-            { route: 'fooTables', name: 'fooTables', moduleId: 'views/fooTables', nav: true },
-            { route: 'jqGrid', name: 'jqGrid', moduleId: 'views/jqGrid', nav: true },
+            { route: 'dataTables', name: 'dataTables', moduleId: 'views/tables/dataTables', nav: true },
+            { route: 'fooTables', name: 'fooTables', moduleId: 'views/tables/fooTables', nav: true },
+            { route: 'jqGrid', name: 'jqGrid', moduleId: 'views/tables/jqGrid', nav: true },
             { route: 'productsGrid', name: 'productsGrid', moduleId: 'views/ecommerce/productsGrid', nav: true },
             { route: 'productsList', name: 'productsList', moduleId: 'views/ecommerce/productsList', nav: true },
             { route: 'product', name: 'product', moduleId: 'views/ecommerce/product', nav: true },
@@ -116,9 +116,9 @@ export class Shell {
             { route: 'secondLevelItem1', name: 'secondLevelItem1', moduleId: 'views/menuLevels/secondLevelItem1', nav: true },
             { route: 'secondLevelItem2', name: 'secondLevelItem2', moduleId: 'views/ecommerce/secondLevelItem2', nav: true },
             { route: 'secondLevelItem3', name: 'secondLevelItem3', moduleId: 'views/ecommerce/secondLevelItem3', nav: true },
-            { route: 'cssAnimations', name: 'cssAnimations', moduleId: 'views/cssAnimations', nav: true },
-            { route: 'landingPage', name: 'landingPage', moduleId: 'views/landingPage', nav: true },
-            { route: 'package', name: 'package', moduleId: 'views/package', nav: true } 
+            { route: 'cssAnimations', name: 'cssAnimations', moduleId: 'views/cssAnimations/cssAnimations', nav: true },
+            { route: 'landingPage', name: 'landingPage', moduleId: 'views/landingPage/landingPage', nav: true },
+            { route: 'package', name: 'package', moduleId: 'views/package/package', nav: true } 
         ]);
 
         this.router = router;
