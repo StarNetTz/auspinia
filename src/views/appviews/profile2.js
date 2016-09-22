@@ -1,4 +1,4 @@
-export class layouts{
+export class profile2{
 	constructor(){
 	
 	}
