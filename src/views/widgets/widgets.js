@@ -6,9 +6,6 @@ import '../../js/plugins/flot/jquery.flot.tooltip.min.js';
 import '../../js/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js';
 import '../../js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js';
 
-/*Icheck*/
-
-
 export class layouts {
     constructor() {
 
@@ -189,19 +186,18 @@ export class layouts {
 
         });
     }
+
+    initChecks() {
+        $('.i-checks').iCheck({
+            checkboxClass: 'icheckbox_square-green',
+            radioClass: 'iradio_square-green'
+        });
+
+    }
     attached() {
-
-
         this.initFlot();
-        this.initTodo();
         this.initMap();
-        // $('.i-checks').iCheck({
-        //     checkboxClass: 'icheckbox_square-green',
-        //     radioClass: 'iradio_square-green'
-        // });
-
-
-
-
+        this.initChecks();
+        this.initTodo();
     }
 }
