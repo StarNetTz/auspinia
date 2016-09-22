@@ -4,7 +4,7 @@ import 'js/plugins/slimscroll/jquery.slimscroll.min.js';
 import { I18N } from 'aurelia-i18n';
 import Backend from 'i18next-xhr-backend';
 import { ValidationMessageProvider } from 'aurelia-validation';
-
+import 'js/plugins/iCheck/icheck.min.js';
 
 export function configure(aurelia) {
 
