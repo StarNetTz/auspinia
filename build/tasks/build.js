@@ -48,6 +48,24 @@ gulp.task('build-png', function() {
     .pipe(gulp.dest(paths.output))
     .pipe(browserSync.stream());
 });
+gulp.task('build-eot', function() {
+  return gulp.src(paths.eot)
+    .pipe(changed(paths.output, {extension: '.eot'}))
+    .pipe(gulp.dest(paths.output))
+    .pipe(browserSync.stream());
+});
+gulp.task('build-ttf', function() {
+  return gulp.src(paths.ttf)
+    .pipe(changed(paths.output, {extension: '.ttf'}))
+    .pipe(gulp.dest(paths.output))
+    .pipe(browserSync.stream());
+});
+gulp.task('build-woff', function() {
+  return gulp.src(paths.woff)
+    .pipe(changed(paths.output, {extension: '.woff'}))
+    .pipe(gulp.dest(paths.output))
+    .pipe(browserSync.stream());
+});
 
 // this task calls the clean task (located
 // in ./clean.js), then runs the build-system
@@ -56,7 +74,7 @@ gulp.task('build-png', function() {
 gulp.task('build', function(callback) {
   return runSequence(
     'clean',
-    ['build-system', 'build-html', 'build-css','build-png'],
+    ['build-system', 'build-html', 'build-css','build-png', 'build-eot', 'build-ttf', 'build-woff'],
     callback
   );
 });
