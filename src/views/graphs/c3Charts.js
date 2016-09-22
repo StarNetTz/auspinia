@@ -1,3 +1,7 @@
+//import { timeFormat } from 'd3'; 
+import 'js/plugins/c3/c3.min.js';
+
+
 export class c3Charts{
 
 	attached()
