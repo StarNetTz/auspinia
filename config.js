@@ -31,6 +31,7 @@ System.config({
     "jquery": "npm:jquery@2.2.4",
     "jquery-ui": "github:components/jqueryui@1.10.4",
     "jwt-decode": "npm:jwt-decode@2.1.0",
+    "moment": "npm:moment@2.9.0",
     "text": "github:systemjs/plugin-text@0.0.8",
     "toastr": "github:CodeSeven/toastr@2.1.0",
     "github:jspm/nodelibs-assert@0.1.0": {
