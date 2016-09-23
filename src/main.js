@@ -6,6 +6,7 @@ import Backend from 'i18next-xhr-backend';
 import { ValidationMessageProvider } from 'aurelia-validation';
 import 'js/plugins/iCheck/icheck.min.js';
 
+
 export function configure(aurelia) {
 
 
