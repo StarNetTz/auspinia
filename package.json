@@ -92,6 +92,7 @@
       "jquery-ui": "github:components/jqueryui@1.10.4",
       "jwt-decode": "npm:jwt-decode@^2.1.0",
       "moment": "npm:moment@2.9.0",
+      "raphael": "github:DmitryBaranovskiy/raphael@^2.2.1",
       "text": "github:systemjs/plugin-text@^0.0.8",
       "toastr": "github:CodeSeven/toastr@2.1.0"
     },

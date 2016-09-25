@@ -1,12 +1,6 @@
-/* @license
-morris.js v0.5.0
-Copyright 2014 Olly Smith All rights reserved.
-Licensed under the BSD-2-Clause License.
-*/
+import Raphael from 'raphael';
 
-
-(function() {
-  var $, Morris, minutesSpecHelper, secondsSpecHelper,
+var $, Morris, minutesSpecHelper, secondsSpecHelper,
     __slice = [].slice,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
@@ -1888,5 +1882,3 @@ Licensed under the BSD-2-Clause License.
     return DonutSegment;
 
   })(Morris.EventEmitter);
-
-}).call(this);
