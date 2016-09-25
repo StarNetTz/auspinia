@@ -1,10 +1,13 @@
-//import '../../js/plugins/morris/raphael-2.1.0.min.js';
-//import '../../js/plugins/morris/morris.js';
+import './morris-0-5-1';
 
 export class morrisCharts {
-    constructor() {
 
+    attached() {
+
+        console.log(Morris);
+        this.initMorris();
     }
+
     initMorris() {
         Morris.Line({
             element: 'morris-one-line-chart',
@@ -95,8 +98,5 @@ export class morrisCharts {
             resize: true,
             lineColors: ['#54cdb4', '#1ab394'],
         });
-    }
-    attached() {
-       // this.initMorris();
     }
 }
