@@ -1,5 +1,5 @@
 //import { timeFormat } from 'd3'; 
-import 'js/plugins/c3/c3.min.js';
+import 'c3';
 
 
 export class c3Charts{

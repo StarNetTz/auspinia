@@ -25,6 +25,7 @@ System.config({
     "aurelia-validatejs": "npm:aurelia-validatejs@0.7.0",
     "aurelia-validation": "npm:aurelia-validation@0.12.5",
     "bootstrap": "github:twbs/bootstrap@3.3.7",
+    "c3": "npm:c3@0.4.11",
     "fetch": "github:github/fetch@1.0.0",
     "font-awesome": "npm:font-awesome@4.6.3",
     "i18next-xhr-backend": "npm:i18next-xhr-backend@1.2.0",
@@ -217,6 +218,10 @@ System.config({
       "ieee754": "npm:ieee754@1.1.6",
       "isarray": "npm:isarray@1.0.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:c3@0.4.11": {
+      "css": "github:systemjs/plugin-css@0.1.29",
+      "d3": "npm:d3@3.5.17"
     },
     "npm:font-awesome@4.6.3": {
       "css": "github:systemjs/plugin-css@0.1.29"
