@@ -1,4 +1,4 @@
-import 'js/plugins/sparkline/jquery.sparkline.min.js';
+import  'jquery-sparkline';
 export class sparklineCharts {
 
     attached() {

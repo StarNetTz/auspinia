@@ -26,15 +26,21 @@ System.config({
     "aurelia-validation": "npm:aurelia-validation@0.12.5",
     "bootstrap": "github:twbs/bootstrap@3.3.7",
     "c3": "npm:c3@0.4.11",
+    "chart.js": "npm:chart.js@2.3.0",
+    "chartist": "npm:chartist@0.9.8",
     "fetch": "github:github/fetch@1.0.0",
+    "flot-charts": "npm:flot-charts@0.8.3",
     "font-awesome": "npm:font-awesome@4.6.3",
     "i18next-xhr-backend": "npm:i18next-xhr-backend@1.2.0",
     "jquery": "npm:jquery@2.2.4",
+    "jquery-sparkline": "npm:jquery-sparkline@2.3.2",
     "jquery-ui": "github:components/jqueryui@1.10.4",
     "jwt-decode": "npm:jwt-decode@2.1.0",
     "moment": "npm:moment@2.9.0",
+    "peity": "npm:peity@3.2.0",
     "raphael": "github:DmitryBaranovskiy/raphael@2.2.1",
     "rickshaw": "npm:rickshaw@1.6.0-rc.0",
+    "sparkline": "npm:sparkline@0.1.2",
     "text": "github:systemjs/plugin-text@0.0.8",
     "toastr": "github:CodeSeven/toastr@2.1.0",
     "github:jspm/nodelibs-assert@0.1.0": {
@@ -244,11 +250,32 @@ System.config({
       "css": "github:systemjs/plugin-css@0.1.29",
       "d3": "npm:d3@3.5.17"
     },
+    "npm:chart.js@2.3.0": {
+      "chartjs-color": "npm:chartjs-color@2.0.0",
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "moment": "npm:moment@2.15.1",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+    },
+    "npm:chartjs-color-string@0.4.0": {
+      "color-name": "npm:color-name@1.1.1"
+    },
+    "npm:chartjs-color@2.0.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "chartjs-color-string": "npm:chartjs-color-string@0.4.0",
+      "color-convert": "npm:color-convert@0.5.3"
+    },
     "npm:core-util-is@1.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
     },
+    "npm:flot-charts@0.8.3": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:font-awesome@4.6.3": {
       "css": "github:systemjs/plugin-css@0.1.29"
+    },
+    "npm:here@0.0.2": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
     "npm:i18next@3.4.3": {
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -259,12 +286,28 @@ System.config({
     "npm:intl@1.2.5": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:jquery-sparkline@2.3.2": {
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+    },
     "npm:jwt-decode@2.1.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
+    "npm:nopt@2.1.2": {
+      "abbrev": "npm:abbrev@1.0.9",
+      "assert": "github:jspm/nodelibs-assert@0.1.0",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "stream": "github:jspm/nodelibs-stream@0.1.0",
+      "url": "github:jspm/nodelibs-url@0.1.0",
+      "util": "github:jspm/nodelibs-util@0.1.0"
+    },
     "npm:path-browserify@0.0.0": {
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:peity@3.2.0": {
+      "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
     "npm:process@0.11.9": {
       "assert": "github:jspm/nodelibs-assert@0.1.0",
@@ -289,6 +332,10 @@ System.config({
       "http": "github:jspm/nodelibs-http@1.7.1",
       "path": "github:jspm/nodelibs-path@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:sparkline@0.1.2": {
+      "here": "npm:here@0.0.2",
+      "nopt": "npm:nopt@2.1.2"
     },
     "npm:stream-browserify@1.0.0": {
       "events": "github:jspm/nodelibs-events@0.1.1",
