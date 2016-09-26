@@ -1,9 +1,10 @@
-import 'js/plugins/chartJs/Chart.min.js';
+import 'chart.js';
 
 export class chartsJs {
     constructor() {}
 
     attached() {
+
         let lineData = {
             labels: ["January", "February", "March", "April", "May", "June", "July"],
             datasets: [
@@ -122,5 +123,6 @@ export class chartsJs {
 
         let ctx5 = document.getElementById("radarChart").getContext("2d");
         new Chart(ctx5, { type: 'radar', data: radarData, options: radarOptions });
+
     }
 }

@@ -1,15 +1,13 @@
-/*Flot*/
-import '../../js/plugins/flot/jquery.flot.js';
-import '../../js/plugins/flot/jquery.flot.tooltip.min.js';
-import '../../js/plugins/flot/jquery.flot.pie.js';
-import '../../js/plugins/flot/jquery.flot.time.js';
-
+import 'flot-charts';
+import 'flot-charts/jquery.flot.time.js';
 
 export class flotCharts {
-    constructor() {
 
+    attached() {
+        this.initFlot();
     }
-    initFlot() {    	
+    
+    initFlot() {
         //Flot Bar Chart
         $(function() {
             var barOptions = {
@@ -188,7 +186,7 @@ export class flotCharts {
                 return res;
             }
 
-           var series = [{
+            var series = [{
                 data: getRandomData(),
                 lines: {
                     fill: true
@@ -1270,8 +1268,5 @@ export class flotCharts {
             });
         });
 
-    }
-    attached() {
-this.initFlot();
     }
 }

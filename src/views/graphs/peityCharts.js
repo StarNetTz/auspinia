@@ -1,4 +1,4 @@
-import 'js/plugins/peity/jquery.peity.min.js';
+import 'peity';
 
 export class peityCharts {
 	

@@ -1,4 +1,4 @@
-import 'js/plugins/chartist/chartist.js';
+import Chartist from 'chartist';
 export class chartist {
     constructor() {
     }
