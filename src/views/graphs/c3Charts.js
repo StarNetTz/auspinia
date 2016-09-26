@@ -1,6 +1,4 @@
-//import { timeFormat } from 'd3'; 
 import 'c3';
-
 
 export class c3Charts{
 

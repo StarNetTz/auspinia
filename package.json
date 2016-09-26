@@ -94,6 +94,7 @@
       "jwt-decode": "npm:jwt-decode@^2.1.0",
       "moment": "npm:moment@2.9.0",
       "raphael": "github:DmitryBaranovskiy/raphael@^2.2.1",
+      "rickshaw": "npm:rickshaw@^1.6.0-rc.0",
       "text": "github:systemjs/plugin-text@^0.0.8",
       "toastr": "github:CodeSeven/toastr@2.1.0"
     },
