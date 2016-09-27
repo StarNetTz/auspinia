@@ -2,13 +2,14 @@ export class fileManager {
     constructor() {
 
     }
-    init() {
-        $('.file-box').each(function() {
-            animationHover(this, 'pulse');
-        });
-    }
+
     attached() {
-        this.init();
+        $('.file-box').mouseover(function() {
+            console.log("dsasss");
+            $(this).addClass('pulse');
+   console.log("ggggg");
+
+        });
 
     }
 }
