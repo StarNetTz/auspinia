@@ -27,13 +27,18 @@ System.config({
     "bootstrap": "github:twbs/bootstrap@3.3.7",
     "fetch": "github:github/fetch@1.0.0",
     "font-awesome": "npm:font-awesome@4.6.3",
+    "fullcalendar": "npm:fullcalendar@2.9.1",
     "i18next-xhr-backend": "npm:i18next-xhr-backend@1.2.0",
+    "icheck": "github:fronteed/iCheck@1.0.2",
     "jquery": "npm:jquery@2.2.4",
     "jquery-ui": "github:components/jqueryui@1.10.4",
     "jwt-decode": "npm:jwt-decode@2.1.0",
     "moment": "npm:moment@2.9.0",
     "text": "github:systemjs/plugin-text@0.0.8",
     "toastr": "github:CodeSeven/toastr@2.1.0",
+    "github:fronteed/iCheck@1.0.2": {
+      "jquery": "github:components/jquery@3.1.1"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -219,6 +224,11 @@ System.config({
     },
     "npm:font-awesome@4.6.3": {
       "css": "github:systemjs/plugin-css@0.1.29"
+    },
+    "npm:fullcalendar@2.9.1": {
+      "jquery": "npm:jquery@2.2.4",
+      "moment": "npm:moment@2.9.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:i18next@3.4.3": {
       "process": "github:jspm/nodelibs-process@0.1.2"
