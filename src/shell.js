@@ -49,7 +49,7 @@ export class Shell {
             { route: 'faq', name: 'faq', moduleId: 'views/appviews/faq', nav: true },
             { route: 'timeline', name: 'timeline', moduleId: 'views/appviews/timeline', nav: true },
             { route: 'pinboard', name: 'pinboard', moduleId: 'views/appviews/pinboard', nav: true },
-            { route: 'searchResult', name: 'searchResult', moduleId: 'views/otherPages/pinboard', nav: true },
+            { route: 'searchResult', name: 'searchResult', moduleId: 'views/otherPages/searchResult', nav: true },
             { route: 'lockscreen', name: 'lockscreen', moduleId: 'views/otherPages/lockscreen', nav: true },
             { route: 'invoice', name: 'invoice', moduleId: 'views/otherPages/invoice', nav: true },
             { route: 'login', name: 'login', moduleId: 'views/otherPages/login', nav: true },
