@@ -1,13 +1,14 @@
-/*Flot*/
-import '../../js/plugins/flot/jquery.flot.js';
-import '../../js/plugins/flot/jquery.flot.tooltip.min.js';
-import '../../js/plugins/flot/jquery.flot.spline.js';
-import '../../js/plugins/flot/jquery.flot.pie.js';
-import '../../js/plugins/flot/jquery.flot.symbol.js';
-import '../../js/plugins/flot/jquery.flot.time.js';
+import 'flot-charts';
+import 'flot-charts/jquery.flot.time.js';
+import 'flot-charts/jquery.flot.pie.js';
+import 'flot-charts/jquery.flot.symbol.js';
 
-/*Sparkline*/
-import '../../js/plugins/sparkline/jquery.sparkline.min.js';
+
+import '../../js/plugins/flot/jquery.flot.spline.js';
+
+
+
+import 'jquery-sparkline';
 
 
 export class dashboard_5 {

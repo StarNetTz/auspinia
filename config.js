@@ -33,8 +33,10 @@ System.config({
     "font-awesome": "npm:font-awesome@4.6.3",
     "i18next-xhr-backend": "npm:i18next-xhr-backend@1.2.0",
     "jquery": "npm:jquery@2.2.4",
+    "jquery-mousewheel": "npm:jquery-mousewheel@3.1.13",
     "jquery-sparkline": "npm:jquery-sparkline@2.3.2",
     "jquery-ui": "github:components/jqueryui@1.10.4",
+    "jvectormap": "npm:jvectormap@2.0.4",
     "jwt-decode": "npm:jwt-decode@2.1.0",
     "moment": "npm:moment@2.9.0",
     "peity": "npm:peity@3.2.0",
@@ -289,6 +291,9 @@ System.config({
     "npm:jquery-sparkline@2.3.2": {
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
+    },
+    "npm:jvectormap@2.0.4": {
+      "jquery": "npm:jquery@2.2.4"
     },
     "npm:jwt-decode@2.1.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
