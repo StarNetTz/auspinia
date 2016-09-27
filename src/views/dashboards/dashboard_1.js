@@ -1,26 +1,35 @@
 /*Flot*/
-import '../../js/plugins/flot/jquery.flot.js';
-import '../../js/plugins/flot/jquery.flot.tooltip.min.js';
-import '../../js/plugins/flot/jquery.flot.spline.js';
-import '../../js/plugins/flot/jquery.flot.pie.js';
+import 'flot-charts';
+import 'peity';
+import 'jquery-ui';
+import 'jquery-sparkline';
+import 'chart.js';
+import toastr from 'toastr';
+
+
+
+//import '../../js/plugins/flot/jquery.flot.js';
+//import '../../js/plugins/flot/jquery.flot.tooltip.min.js';
+//import '../../js/plugins/flot/jquery.flot.spline.js';
+//import '../../js/plugins/flot/jquery.flot.pie.js';
 
 /*Peity*/
-import '../../js/plugins/peity/jquery.peity.min.js';
+//import '../../js/plugins/peity/jquery.peity.min.js';
 
 /*jQuery UI*/
-import '../../js/plugins/jquery-ui/jquery-ui.min.js';
+//import '../../js/plugins/jquery-ui/jquery-ui.min.js';
 
 /*GITTER*/
 import '../../js/plugins/gritter/jquery.gritter.min.js';
 
 /*Sparkline*/
-import '../../js/plugins/sparkline/jquery.sparkline.min.js';
+//import '../../js/plugins/sparkline/jquery.sparkline.min.js';
 
 /*ChartJS*/
-import '../../js/plugins/chartJs/Chart.min.js';
+//import '../../js/plugins/chartJs/Chart.min.js';
 
 /*Toastr*/
-import toastr from 'toastr';
+
 
 export class dashboard_1 {
     constructor() {
