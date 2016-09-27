@@ -55,6 +55,7 @@ export class Shell {
             { route: 'searchResult', name: 'searchResult', moduleId: 'views/otherPages/searchResult', nav: true },
             { route: 'lockscreen', name: 'lockscreen', moduleId: 'views/otherPages/lockscreen', nav: true },
             { route: 'invoice', name: 'invoice', moduleId: 'views/otherPages/invoice', nav: true },
+            { route: 'invoicePrint', name: 'invoicePrint', moduleId: 'views/otherPages/invoicePrint', nav: true },
             { route: 'login', name: 'login', moduleId: 'views/otherPages/login', nav: true },
             { route: 'login2', name: 'login2', moduleId: 'views/otherPages/login2', nav: true },
             { route: 'forgetPassword', name: 'forgetPassword', moduleId: 'views/otherPages/forgetPassword', nav: true },
