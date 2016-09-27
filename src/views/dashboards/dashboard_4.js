@@ -1,12 +1,6 @@
-/*Flot*/
-import '../../js/plugins/flot/jquery.flot.js';
-import '../../js/plugins/flot/jquery.flot.tooltip.min.js';
-
-/*ChartJS*/
-import '../../js/plugins/chartJs/Chart.min.js';
-
-/*Peity*/
-import '../../js/plugins/peity/jquery.peity.min.js';
+import 'flot-charts';
+import 'chart.js';
+import 'peity';;
 
 
 

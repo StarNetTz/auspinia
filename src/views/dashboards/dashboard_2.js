@@ -1,24 +1,14 @@
-/*Flot*/
-import '../../js/plugins/flot/jquery.flot.js';
-import '../../js/plugins/flot/jquery.flot.tooltip.min.js';
-import '../../js/plugins/flot/jquery.flot.spline.js';
-import '../../js/plugins/flot/jquery.flot.pie.js';
-import '../../js/plugins/flot/jquery.flot.symbol.js';
-import '../../js/plugins/flot/jquery.flot.time.js';
-
-/*Peity*/
-import '../../js/plugins/peity/jquery.peity.min.js';
-
-/*jQuery UI*/
-import '../../js/plugins/jquery-ui/jquery-ui.min.js';
+import 'flot-charts';
+import 'flot-charts/jquery.flot.time.js';
+import 'peity';
+import 'jquery-ui';
 
 
 /*Jvectormap*/
 import '../../js/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js';
 import '../../js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js';
 
-/*Sparkline*/
-import '../../js/plugins/sparkline/jquery.sparkline.min.js';
+import 'jquery-sparkline';
 
 export class dashboard_2 {
     constructor() {}
