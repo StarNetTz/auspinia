@@ -1,13 +1,14 @@
 import {inject, Aurelia} from 'aurelia-framework';
 
 @inject(Aurelia)
-export class lockscreen{
+export class register{
 	constructor(aurelia){
 		this.aurelia = aurelia;
 	}
 
 	attached()
 	{
-		this.aurelia.setRoot("rootViews/lockscreen");
+		console.log('prvi');
+		this.aurelia.setRoot("rootViews/register");
 	}
 }

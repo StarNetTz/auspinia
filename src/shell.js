@@ -3,7 +3,7 @@ export class Shell {
         config.title = 'Aurelia';
         config.map([
             { route: 'restricted', name: 'restricted', moduleId: 'views/restricted', nav: true, settings: { isRestricted: true, requiredRole: 'Admin' } },
-            { route: ['','dashboard_1'], name: 'dashboard_1', moduleId: 'views/dashboards/dashboard_1', nav: true },
+            { route: ['', 'dashboard_1'], name: 'dashboard_1', moduleId: 'views/dashboards/dashboard_1', nav: true },
             { route: 'dashboard_2', name: 'dashboard_2', moduleId: 'views/dashboards/dashboard_2', nav: true },
             { route: 'dashboard_3', name: 'dashboard_3', moduleId: 'views/dashboards/dashboard_3', nav: true },
             { route: 'dashboard_4', name: 'dashboard_4', moduleId: 'views/dashboards/dashboard_4', nav: true },
@@ -21,6 +21,9 @@ export class Shell {
             { route: 'emailView', name: 'emailView', moduleId: 'views/mailbox/emailView', nav: true },
             { route: 'composeEmail', name: 'composeEmail', moduleId: 'views/mailbox/composeEmail', nav: true },
             { route: 'emailTemplates', name: 'emailTemplates', moduleId: 'views/mailbox/emailTemplates', nav: true },
+            { route: 'action', name: 'action', moduleId: 'views/mailbox/action', nav: true },
+            { route: 'alert', name: 'alert', moduleId: 'views/mailbox/alert', nav: true },
+            { route: 'billing', name: 'billing', moduleId: 'views/mailbox/billing', nav: true },
             { route: 'metrics', name: 'metrics', moduleId: 'views/metrics/metrics', nav: true },
             { route: 'widgets', name: 'widgets', moduleId: 'views/widgets/widgets', nav: true },
             { route: 'basicForm', name: 'basicForm', moduleId: 'views/forms/basicForm', nav: true },
@@ -52,6 +55,7 @@ export class Shell {
             { route: 'searchResult', name: 'searchResult', moduleId: 'views/otherPages/searchResult', nav: true },
             { route: 'lockscreen', name: 'lockscreen', moduleId: 'views/otherPages/lockscreen', nav: true },
             { route: 'invoice', name: 'invoice', moduleId: 'views/otherPages/invoice', nav: true },
+            { route: 'invoicePrint', name: 'invoicePrint', moduleId: 'views/otherPages/invoicePrint', nav: true },
             { route: 'login', name: 'login', moduleId: 'views/otherPages/login', nav: true },
             { route: 'login2', name: 'login2', moduleId: 'views/otherPages/login2', nav: true },
             { route: 'forgetPassword', name: 'forgetPassword', moduleId: 'views/otherPages/forgetPassword', nav: true },
@@ -118,7 +122,7 @@ export class Shell {
             { route: 'secondLevelItem3', name: 'secondLevelItem3', moduleId: 'views/ecommerce/secondLevelItem3', nav: true },
             { route: 'cssAnimations', name: 'cssAnimations', moduleId: 'views/cssAnimations/cssAnimations', nav: true },
             { route: 'landingPage', name: 'landingPage', moduleId: 'views/landingPage/landingPage', nav: true },
-            { route: 'package', name: 'package', moduleId: 'views/package/package', nav: true } 
+            { route: 'package', name: 'package', moduleId: 'views/package/package', nav: true }
         ]);
 
         this.router = router;
