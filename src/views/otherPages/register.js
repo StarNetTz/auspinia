@@ -8,7 +8,6 @@ export class register{
 
 	attached()
 	{
-		console.log('prvi');
 		this.aurelia.setRoot("rootViews/register");
 	}
 }
