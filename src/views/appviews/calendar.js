@@ -3,7 +3,9 @@ import moment from 'moment';
 import '../../js/plugins/jquery-ui/jquery-ui.min.js';
 
 /*Full Calendar*/
-import '../../js/plugins/fullcalendar/fullcalendar.min.js';
+
+//import icheck from 'icheck';
+import fullcalendar from 'fullcalendar';
 
 export class calendar {
     constructor() {
@@ -16,6 +18,7 @@ export class calendar {
         });
     }
     initCalendar() {
+
 
         $('#external-events div.external-event').each(function() {
 
@@ -38,6 +41,7 @@ export class calendar {
         /* initialize the calendar
          -----------------------------------------------------------------*/
         var date = new Date();
+
         var d = date.getDate();
         var m = date.getMonth();
         var y = date.getFullYear();
@@ -97,10 +101,9 @@ export class calendar {
         });
     }
     attached() {
-
-        //uncomment after merging to master (iChech already exists)
-        //this.initIcheck();
-        this.initCalendar();
+       
+        this.initIcheck();
+       // this.initCalendar();
 
 
 

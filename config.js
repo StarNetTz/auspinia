@@ -31,7 +31,9 @@ System.config({
     "fetch": "github:github/fetch@1.0.0",
     "flot-charts": "npm:flot-charts@0.8.3",
     "font-awesome": "npm:font-awesome@4.6.3",
+    "fullcalendar": "npm:fullcalendar@2.9.1",
     "i18next-xhr-backend": "npm:i18next-xhr-backend@1.2.0",
+    "icheck": "github:fronteed/iCheck@1.0.2",
     "jquery": "npm:jquery@2.2.4",
     "jquery-mousewheel": "npm:jquery-mousewheel@3.1.13",
     "jquery-sparkline": "npm:jquery-sparkline@2.3.2",
@@ -45,6 +47,9 @@ System.config({
     "sparkline": "npm:sparkline@0.1.2",
     "text": "github:systemjs/plugin-text@0.0.8",
     "toastr": "github:CodeSeven/toastr@2.1.0",
+    "github:fronteed/iCheck@1.0.2": {
+      "jquery": "github:components/jquery@3.1.1"
+    },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
     },
@@ -275,6 +280,11 @@ System.config({
     },
     "npm:font-awesome@4.6.3": {
       "css": "github:systemjs/plugin-css@0.1.29"
+    },
+    "npm:fullcalendar@2.9.1": {
+      "jquery": "npm:jquery@2.2.4",
+      "moment": "npm:moment@2.15.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:here@0.0.2": {
       "fs": "github:jspm/nodelibs-fs@0.1.2"
