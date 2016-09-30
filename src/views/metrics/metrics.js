@@ -1,5 +1,5 @@
-import 'js/plugins/peity/jquery.peity.min.js';
-import 'js/plugins/sparkline/jquery.sparkline.min.js';
+import 'peity';
+import  'jquery-sparkline';
 
 export class metrics {
 

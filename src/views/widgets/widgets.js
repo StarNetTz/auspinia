@@ -1,7 +1,5 @@
-/*Flot*/
-import '../../js/plugins/flot/jquery.flot.js';
-import '../../js/plugins/flot/jquery.flot.tooltip.min.js';
-
+import 'flot-charts';
+import 'jquery-ui';
 /*Jvectormap*/
 import '../../js/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js';
 import '../../js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js';
