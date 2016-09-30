@@ -5,6 +5,7 @@ import { I18N } from 'aurelia-i18n';
 import Backend from 'i18next-xhr-backend';
 import { ValidationMessageProvider } from 'aurelia-validation';
 import icheck from 'icheck';
+import 'jasny-bootstrap';
 
 
 export function configure(aurelia) {

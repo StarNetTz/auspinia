@@ -1,4 +1,3 @@
-import $ from 'jquery';
 import "jquery-knob";
 import "ion-rangeslider";
 import "../../js/plugins/chosen/chosen.jquery.js";
@@ -19,6 +18,7 @@ export class advancedPlugins {
     constructor() {}
 
     attached() {
+
         this.initKnob();
         this.initIonRangeSlider();
         this.initChosen();
@@ -177,6 +177,7 @@ export class advancedPlugins {
     }
 
     initDatePicker() {
+        console.log($('#data_1 .input-group.date'));
         $('#data_1 .input-group.date').datepicker({
             todayBtn: "linked",
             keyboardNavigation: false,
