@@ -12,7 +12,6 @@ module.exports = {
     eot: appRoot + '**/*.eot',
     ttf: appRoot + '**/*.ttf',
     woff: appRoot + '**/*.woff',
-    woff2: appRoot + '**/*.woff2',
     output: outputRoot,
     exportSrv: exportSrvRoot,
     doc: './doc',

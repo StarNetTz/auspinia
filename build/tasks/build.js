@@ -66,13 +66,6 @@ gulp.task('build-woff', function() {
     .pipe(gulp.dest(paths.output))
     .pipe(browserSync.stream());
 });
-gulp.task('build-woff2', function() {
-  return gulp.src(paths.woff2)
-    .pipe(changed(paths.output, {extension: '.woff2'}))
-    .pipe(gulp.dest(paths.output))
-    .pipe(browserSync.stream());
-});
-
 
 // this task calls the clean task (located
 // in ./clean.js), then runs the build-system
@@ -81,7 +74,7 @@ gulp.task('build-woff2', function() {
 gulp.task('build', function(callback) {
   return runSequence(
     'clean',
-    ['build-system', 'build-html', 'build-css','build-png', 'build-eot', 'build-ttf', 'build-woff','build-woff2'],
+    ['build-system', 'build-html', 'build-css','build-png', 'build-eot', 'build-ttf', 'build-woff'],
     callback
   );
 });

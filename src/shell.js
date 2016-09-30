@@ -28,7 +28,7 @@ export class Shell {
             { route: 'widgets', name: 'widgets', moduleId: 'views/widgets/widgets', nav: true },
             { route: 'basicForm', name: 'basicForm', moduleId: 'views/forms/basicForm', nav: true },
             { route: 'advancedPlugins', name: 'advancedPlugins', moduleId: 'views/forms/advancedPlugins', nav: true },
-            { route: 'wizard', name: 'wizard', moduleId: 'views/forms/wizard', nav: true },
+            { route: 'wizard', name: 'wizard', moduleId: 'views/forms/basicForm', nav: true },
             { route: 'fileUpload', name: 'fileUpload', moduleId: 'views/forms/fileUpload', nav: true },
             { route: 'textEditor', name: 'textEditor', moduleId: 'views/forms/textEditor', nav: true },
             { route: 'autoComplete', name: 'autoComplete', moduleId: 'views/forms/autoComplete', nav: true },
