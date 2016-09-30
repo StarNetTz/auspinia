@@ -25,14 +25,25 @@ System.config({
     "aurelia-validatejs": "npm:aurelia-validatejs@0.7.0",
     "aurelia-validation": "npm:aurelia-validation@0.12.5",
     "bootstrap": "github:twbs/bootstrap@3.3.7",
+    "bootstrap-3-typeahead": "npm:bootstrap-3-typeahead@4.0.2",
+    "bootstrap-datepicker": "npm:bootstrap-datepicker@1.6.4",
+    "bootstrap-markdown": "npm:bootstrap-markdown@2.10.0",
+    "bootstrap-touchspin": "npm:bootstrap-touchspin@3.1.1",
     "c3": "npm:c3@0.4.11",
     "chart.js": "npm:chart.js@2.3.0",
     "chartist": "npm:chartist@0.9.8",
+    "chosen-jquery-browserify": "npm:chosen-jquery-browserify@1.0.0",
+    "codemirror": "npm:codemirror@5.19.0",
+    "daterangepicker": "npm:daterangepicker@0.0.3",
+    "dropzone": "npm:dropzone@4.3.0",
     "fetch": "github:github/fetch@1.0.0",
     "flot-charts": "npm:flot-charts@0.8.3",
     "font-awesome": "npm:font-awesome@4.6.3",
     "i18next-xhr-backend": "npm:i18next-xhr-backend@1.2.0",
+    "ion-rangeslider": "npm:ion-rangeslider@2.1.4",
+    "jasny-bootstrap": "npm:jasny-bootstrap@3.1.3",
     "jquery": "npm:jquery@2.2.4",
+    "jquery-knob": "npm:jquery-knob@1.2.11",
     "jquery-mousewheel": "npm:jquery-mousewheel@3.1.13",
     "jquery-sparkline": "npm:jquery-sparkline@2.3.2",
     "jquery-ui": "github:components/jqueryui@1.10.4",
@@ -61,6 +72,9 @@ System.config({
       "stream": "github:jspm/nodelibs-stream@0.1.0",
       "url": "github:jspm/nodelibs-url@0.1.0",
       "util": "github:jspm/nodelibs-util@0.1.0"
+    },
+    "github:jspm/nodelibs-https@0.1.0": {
+      "https-browserify": "npm:https-browserify@0.0.0"
     },
     "github:jspm/nodelibs-path@0.1.0": {
       "path-browserify": "npm:path-browserify@0.0.0"
@@ -240,6 +254,14 @@ System.config({
       "aurelia-task-queue": "npm:aurelia-task-queue@1.0.0",
       "aurelia-templating": "npm:aurelia-templating@1.1.0"
     },
+    "npm:bootstrap-3-typeahead@4.0.2": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:bootstrap-datepicker@1.6.4": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "jquery": "npm:jquery@2.2.4",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:buffer@3.6.0": {
       "base64-js": "npm:base64-js@0.0.8",
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
@@ -267,8 +289,17 @@ System.config({
       "chartjs-color-string": "npm:chartjs-color-string@0.4.0",
       "color-convert": "npm:color-convert@0.5.3"
     },
+    "npm:codemirror@5.19.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "child_process": "github:jspm/nodelibs-child_process@0.1.0",
+      "https": "github:jspm/nodelibs-https@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
     "npm:core-util-is@1.0.2": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0"
+    },
+    "npm:dropzone@4.3.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:flot-charts@0.8.3": {
       "process": "github:jspm/nodelibs-process@0.1.2"
@@ -279,6 +310,9 @@ System.config({
     "npm:here@0.0.2": {
       "fs": "github:jspm/nodelibs-fs@0.1.2"
     },
+    "npm:https-browserify@0.0.0": {
+      "http": "github:jspm/nodelibs-http@1.7.1"
+    },
     "npm:i18next@3.4.3": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
@@ -286,6 +320,17 @@ System.config({
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
     "npm:intl@1.2.5": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:ion-rangeslider@2.1.4": {
+      "jquery": "npm:jquery@2.2.4"
+    },
+    "npm:jasny-bootstrap@3.1.3": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:jquery-knob@1.2.11": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:jquery-sparkline@2.3.2": {
