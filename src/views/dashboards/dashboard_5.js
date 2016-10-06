@@ -1,11 +1,9 @@
 import 'flot-charts';
+import '../../js/plugins/flot/jquery.flot.tooltip.min.js';
+import '../../js/plugins/flot/jquery.flot.spline.js';
 import 'flot-charts/jquery.flot.time.js';
 import 'flot-charts/jquery.flot.pie.js';
 import 'flot-charts/jquery.flot.symbol.js';
-
-
-import '../../js/plugins/flot/jquery.flot.spline.js';
-
 
 
 import 'jquery-sparkline';

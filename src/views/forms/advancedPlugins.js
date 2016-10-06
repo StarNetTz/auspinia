@@ -1,17 +1,18 @@
-import "jquery-knob";
-import "ion-rangeslider";
 import "../../js/plugins/chosen/chosen.jquery.js";
-import "bootstrap-touchspin";
-import "../../js/plugins/dualListbox/jquery.bootstrap-duallistbox.js";
-import "../../js/plugins/select2/select2.full.min.js";
-import "../../js/plugins/nouslider/jquery.nouislider.min.js";
+import "jquery-knob";
+import "../../js/plugins/jasny/jasny-bootstrap.min.js";
 import "bootstrap-datepicker";
-import "daterangepicker";
-import "../../js/plugins/clockpicker/clockpicker.js";
+import "../../js/plugins/nouslider/jquery.nouislider.min.js";
+//import "../../js/plugins/switchery/switchery.js";
+import "ion-rangeslider";
 import "../../js/plugins/colorpicker/bootstrap-colorpicker.min.js";
-// import Switchery from "../../js/plugins/switchery/switchery.js";
-import "../../js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js";
+import "../../js/plugins/clockpicker/clockpicker.js";
 import "../../js/plugins/cropper/cropper.min.js";
+import "daterangepicker";
+import "../../js/plugins/select2/select2.full.min.js";
+import "bootstrap-touchspin";
+import "../../js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js";
+import "../../js/plugins/dualListbox/jquery.bootstrap-duallistbox.js";
 
 
 export class advancedPlugins {
@@ -26,13 +27,13 @@ export class advancedPlugins {
         this.initDualListbox();
         this.initSelect2();
         this.initNoUISlider();
-        this.initDatePicker();
-        this.initDateRangePicker();
         this.initClockPicker();
         this.initColorPicker();
-        // this.initSwitchery();
         this.initTags();
         this.initCropper();
+          this.initDatePicker();
+        // this.initDateRangePicker();
+        //  this.initSwitchery();
     }
 
     initKnob() {
@@ -177,7 +178,6 @@ export class advancedPlugins {
     }
 
     initDatePicker() {
-        console.log($('#data_1 .input-group.date'));
         $('#data_1 .input-group.date').datepicker({
             todayBtn: "linked",
             keyboardNavigation: false,
@@ -300,13 +300,13 @@ export class advancedPlugins {
     }
 
     initTags() {
-         $('.tagsinput').tagsinput({
+        $('.tagsinput').tagsinput({
             tagClass: 'label label-primary'
         });
     }
 
     initCropper() {
-         var $image = $(".image-crop > img")
+        var $image = $(".image-crop > img")
         $($image).cropper({
             aspectRatio: 1.618,
             preview: ".img-preview",

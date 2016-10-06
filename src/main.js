@@ -6,7 +6,7 @@ import Backend from 'i18next-xhr-backend';
 import { ValidationMessageProvider } from 'aurelia-validation';
 import icheck from 'icheck';
 import 'jasny-bootstrap';
-
+import moment from 'moment';
 
 export function configure(aurelia) {
 
@@ -17,7 +17,7 @@ export function configure(aurelia) {
         .plugin('aurelia-i18n', (instance) => {
             // register backend plugin
             instance.i18next.use(Backend);
-            ValidationMessageProvider.prototype.getMessage = function(key) {               
+            ValidationMessageProvider.prototype.getMessage = function(key) {
                 return this.parser.parseMessage(instance.tr(key));
             };
 
@@ -29,7 +29,7 @@ export function configure(aurelia) {
                 backend: { // <-- configure backend settings
                     loadPath: './locale/{{lng}}/{{ns}}.json', // <-- XHR settings for where to get the files from
                 },
-                ns: ['translation','sidemenu'],
+                ns: ['translation', 'sidemenu'],
                 defaultNS: 'translation',
                 lng: 'en',
                 attributes: ['t', 'i18n'],

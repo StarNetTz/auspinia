@@ -1,29 +1,26 @@
 <template>
-
-<require from="css/plugins/bootstrap-markdown/bootstrap-markdown.min.css"></require>
-	 <div class="row wrapper border-bottom white-bg page-heading">
-                <div class="col-lg-10">
-                    <h2>Markdown</h2>
-                    <ol class="breadcrumb">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a>Forms</a>
-                        </li>
-                        <li class="active">
-                            <strong>Markdown</strong>
-                        </li>
-                    </ol>
-                </div>
-                <div class="col-lg-2">
-
-                </div>
-            </div>
-        <div class="wrapper wrapper-content">
-
-            <div class="row">
-                <div class="col-lg-12">
+    <require from='css/plugins/bootstrap-markdown/bootstrap-markdown.min.css'></require>
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-lg-10">
+            <h2>Markdown</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a>Forms</a>
+                </li>
+                <li class="active">
+                    <strong>Markdown</strong>
+                </li>
+            </ol>
+        </div>
+        <div class="col-lg-2">
+        </div>
+    </div>
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-lg-12">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <h5>Bootstrap markdown <small>http://www.codingdrama.com/bootstrap-markdown/</small></h5>
@@ -52,51 +49,37 @@
                         <p>
                             Switch regular textarea within your form into Bootstrap-Markdown editor seamlessly by adding <code>data-provide="markdown"</code> attribute
                         </p>
-
-                            <textarea name="content" data-provide="markdown" rows="10">
-h1 header
-============
-
-Paragraphs are separated by a blank line.
-
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
-
-  * this one
-  * that one
-  * the other one
-                            </textarea>
+                        <textarea name="content" data-provide="markdown" rows="10">
+                            h1 header ============ Paragraphs are separated by a blank line. 2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists look like: * this one * that one * the other one
+                        </textarea>
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="ibox float-e-margins">
-
-                        <div class="ibox-content">
-
-                            <h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content">
+                        <h2>
                                 Usage
                             </h2>
-                            <p>
-                                Beside using above data-attributes, you could call it via code
-                            </p>
-                            <pre>
+                        <p>
+                            Beside using above data-attributes, you could call it via code
+                        </p>
+                        <pre>
 $("#some-textarea").markdown({autofocus:false,savable:false}) </pre>
-                            <h4>
+                        <h4>
                                 Available options are:
                             </h4>
-
-                            <table class="table table-striped">
-                                <thead>
+                        <table class="table table-striped">
+                            <thead>
                                 <tr>
                                     <th>Option Name</th>
                                     <th>Type</th>
                                     <th>Description</th>
                                 </tr>
-                                </thead>
-                                <tbody>
+                            </thead>
+                            <tbody>
                                 <tr>
                                     <td>
                                         <code>autofocus</code>
@@ -137,8 +120,10 @@ $("#some-textarea").markdown({autofocus:false,savable:false}) </pre>
                                         <code>resize</code>
                                     </td>
                                     <td><code>string</code></td>
-                                    <td>Option to disable or change the resize property, possible values <code>none</code>,<code>both</code>,<code>horizontal</code>,<code>vertical</code>. Default <code>none</code><br>
-                                        If this option is enabled, the user will be able to resize the editor and preview screen.<br><br>
+                                    <td>Option to disable or change the resize property, possible values <code>none</code>,<code>both</code>,<code>horizontal</code>,<code>vertical</code>. Default <code>none</code>
+                                        <br> If this option is enabled, the user will be able to resize the editor and preview screen.
+                                        <br>
+                                        <br>
                                         <div class="alert alert-warning">
                                             <strong>Browser support</strong>
                                             <p>This is currently only supported on limited browsers. See <a href="http://caniuse.com/css-resize" target="_blank">Can you run it: Resize</a> for all supported browsers</p>
@@ -159,7 +144,6 @@ $("#some-textarea").markdown({autofocus:false,savable:false}) </pre>
                                     <td><code>string</code></td>
                                     <td>Localization setting. Default to <code>en</code></td>
                                 </tr>
-
                                 <tr>
                                     <td>
                                         <code>footer</code>
@@ -167,7 +151,6 @@ $("#some-textarea").markdown({autofocus:false,savable:false}) </pre>
                                     <td><code>mixed</code></td>
                                     <td>Footer dom. Can be string or callback. Default is empty string</td>
                                 </tr>
-
                                 <tr>
                                     <td>
                                         <code>fullscreen</code>
@@ -175,9 +158,6 @@ $("#some-textarea").markdown({autofocus:false,savable:false}) </pre>
                                     <td><code>object</code></td>
                                     <td>Contains <code>enable</code> (<code>bool</code>) and <code>icons</code> (<code>object</code>) keys.</td>
                                 </tr>
-
-
-
                                 <tr>
                                     <td>
                                         <code>hiddenButtons</code>
@@ -185,7 +165,6 @@ $("#some-textarea").markdown({autofocus:false,savable:false}) </pre>
                                     <td><code>mixed</code></td>
                                     <td>Array or string of button names to be hidden. Default is empty string</td>
                                 </tr>
-
                                 <tr>
                                     <td>
                                         <code>disabledButtons</code>
@@ -193,15 +172,11 @@ $("#some-textarea").markdown({autofocus:false,savable:false}) </pre>
                                     <td><code>mixed</code></td>
                                     <td>Array or string of button names to be disabled. Default is empty string</td>
                                 </tr>
-
-                                </tbody>
-                            </table>
-
-                        </div>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-
-
-            </div>
+        </div>
+    </div>
 </template>
