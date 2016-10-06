@@ -6,7 +6,6 @@ export class register {
         });
     }
     attached() {
-        console.log('drugi');
         this.initICheck();
         $('body').addClass('gray-bg');
     }

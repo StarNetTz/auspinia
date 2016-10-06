@@ -72,6 +72,7 @@
       "aurelia-event-aggregator": "npm:aurelia-event-aggregator@^1.0.0",
       "aurelia-fetch-client": "npm:aurelia-fetch-client@^1.0.0-rc.1.0.0",
       "aurelia-framework": "npm:aurelia-framework@^1.0.0-rc.1.0.0",
+      "aurelia-google-maps": "npm:aurelia-google-maps@^1.0.14",
       "aurelia-history-browser": "npm:aurelia-history-browser@^1.0.0-rc.1.0.0",
       "aurelia-i18n": "npm:aurelia-i18n@^1.1.2",
       "aurelia-loader-default": "npm:aurelia-loader-default@^1.0.0-rc.1.0.0",

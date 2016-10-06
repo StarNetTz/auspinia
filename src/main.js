@@ -37,7 +37,13 @@ export function configure(aurelia) {
                 debug: false
             });
         })
-        .plugin('aurelia-validation');
+        .plugin('aurelia-validation')
+        .plugin('aurelia-google-maps', config => {
+            config.options({
+                apiKey: 'myapiKey',
+                apiLibraries: 'drawing,geometry' //get optional libraries like drawing, geometry, ... - comma seperated list
+            });
+        });
 
     //Uncomment the line below to enable animation.
     //aurelia.use.plugin('aurelia-animator-css');

@@ -82,6 +82,7 @@ export class Shell {
             { route: 'modalWindow', name: 'modalWindow', moduleId: 'views/miscellaneous/modalWindow', nav: true },
             { route: 'clipboard', name: 'clipboard', moduleId: 'views/miscellaneous/clipboard', nav: true },
             { route: 'forumMain', name: 'forumMain', moduleId: 'views/miscellaneous/forumMain', nav: true },
+              { route: 'forumPost', name: 'forumPost', moduleId: 'views/miscellaneous/forumPost', nav: true },
             { route: 'validation', name: 'validation', moduleId: 'views/miscellaneous/validation', nav: true },
             { route: 'treeView', name: 'treeView', moduleId: 'views/miscellaneous/treeView', nav: true },
             { route: 'loadingButtons', name: 'loadingButtons', moduleId: 'views/miscellaneous/loadingButtons', nav: true },
