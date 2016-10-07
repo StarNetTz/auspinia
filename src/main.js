@@ -40,7 +40,7 @@ export function configure(aurelia) {
         .plugin('aurelia-validation')
         .plugin('aurelia-google-maps', config => {
             config.options({
-                apiKey: 'myapiKey',
+                apiKey: 'AIzaSyDQTpXj82d8UpCi97wzo_nKXL7nYrd4G70',
                 apiLibraries: 'drawing,geometry' //get optional libraries like drawing, geometry, ... - comma seperated list
             });
         });
